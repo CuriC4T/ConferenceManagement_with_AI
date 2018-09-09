@@ -3,12 +3,13 @@
 ### *It's Project for graduate Project* 
 ### *This md file is for What I do and study every day*
 
+
 ## 2018_09_04
+* Buy Mic for Raspberry Pi
 * Review Android, Android Studio and basic step (page 126/829)
 ____
 ## 2018_09_05
 * Install raspbian
-* Buy Mic for Raspberry Pi
 * Review Android, Android Layout (page 179/829)
 ____
 ## 2018_09_06
@@ -41,6 +42,7 @@ ctl.!default{
 
 ____
 ## 2018_09_09
-* Find STT and TTS
+* Search STT and TTS
 * get key for Google cloud API(STT)
+* Make my Idea small for DeadLine
 ____
