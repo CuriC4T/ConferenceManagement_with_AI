@@ -1,4 +1,4 @@
-# ProjectDoorAi
+# ** ProjectDoorAI **
 ### It's Project for graduate Project 
 ### This md file is for What I do and study every day
 
@@ -15,7 +15,8 @@ ____
 * Solve ISSUE about Speaker and MIC. It's problem that Set device ID is diffrent each other. 
 In my case, USB MIC is card 0,device 0 and Speaker(AUX) is card 1 and device 0
 so I solve it by making asoundrc
-` pcm.!default{
+```javascript
+pcm.!default{
 	type asym
 	playback.pcm{
 		type hw
@@ -30,7 +31,7 @@ ctl.!default{
 	type hw
 	card 0
 }
-
+```
 *
 
 ____
