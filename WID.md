@@ -1,4 +1,4 @@
-# **ProjectDoorAI**
+# **ConferenceManagement_with_AI**
 ## WID means What I Do
 ### *It's Project for graduate Project* 
 ### *This md file is for What I do and study every day*
@@ -45,4 +45,12 @@ ____
 * Search STT and TTS
 * get key for Google cloud API(STT)
 * Make my Idea small for DeadLine
+____
+## 2018_09_11
+### <em>Project topics is changed <em>
+### basicaliy, It is AI on the Desktop 
+### main function 
+	* control External program by using voice AI
+	* manage Conference with Cam,chatting,painter,voice
+	* inform you with your plan
 ____
