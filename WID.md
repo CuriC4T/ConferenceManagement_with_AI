@@ -53,7 +53,16 @@ ____
 	* control External program by using voice AI
 	* manage Conference with Cam,chatting,painter,voice
 	* inform you with your plan
+* find useful External library for AI that is ND4J
 ____
 ## 2018_09_13
+* make basic UI
 
+____
+## 2018_09_14
+* add code that run the program for the command you entered
+____
+## 2018_09_16
+* add conference solution code that I made for client
+* will make sever for conference
 ____
