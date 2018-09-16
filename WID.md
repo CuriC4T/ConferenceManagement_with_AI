@@ -64,5 +64,5 @@ ____
 ____
 ## 2018_09_16
 * add conference solution code that I made for client
-* will make sever for conference
+* make sever for conference(yet chatting part)
 ____
