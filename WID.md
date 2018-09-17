@@ -63,6 +63,9 @@ ____
 * add code that run the program for the command you entered
 ____
 ## 2018_09_16
-* add conference solution code that I made for client
+* adding conference solution code that I made for client
 * make sever for conference(yet chatting part)
+____
+## 2018_09_16
+* completly add chatting code at client
 ____
