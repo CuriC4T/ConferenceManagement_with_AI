@@ -69,3 +69,6 @@ ____
 ## 2018_09_16
 * completly add chatting code at client
 ____
+## 2018_09_16
+* addING whiteboard code at client
+____
