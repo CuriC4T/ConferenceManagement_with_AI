@@ -66,9 +66,12 @@ ____
 * adding conference solution code that I made for client
 * make sever for conference(yet chatting part)
 ____
-## 2018_09_16
+## 2018_09_17
 * completly add chatting code at client
 ____
-## 2018_09_16
-* addING whiteboard code at client
+## 2018_09_18
+* adding whiteboard code at client
+____
+## 2018_09_19
+* adding webcam code at client
 ____
