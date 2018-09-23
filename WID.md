@@ -67,11 +67,31 @@ ____
 * make sever for conference(yet chatting part)
 ____
 ## 2018_09_17
-* completly add chatting code at client
+* completly add chatting code for client
+* completly add chatting code for sever
 ____
 ## 2018_09_18
-* adding whiteboard code at client
+* adding whiteboard code for client
+* completly add whiteboard code for sever
 ____
 ## 2018_09_19
-* adding webcam code at client
+* completly add whiteboard code for client
+* adding webcam code for client
+* have ISSUE that when transport webcam data with ObjectInput/OutputStream, occur error, out of buffer
 ____
+## 2018_09_21
+* solve ISSUE by using "reset()" ObjectInput/OutputStream be unaffected by flush() and not be reset by gc 
+Please check the link below for more information. 
+<https://stackoverflow.com/questions/38005181/java-get-image-from-webcam-and-send-over-socket#>
+
+____
+## 2018_09_22
+* completly add webcam code for client
+* adding webcam code for server
+____
+## 2018_09_23
+* completly add webcam code for server
+* combine component of conference with existing part that do order
+* update UI
+____
+
