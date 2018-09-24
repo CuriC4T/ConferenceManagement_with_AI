@@ -94,4 +94,9 @@ ____
 * combine component of conference with existing part that do order
 * update UI
 ____
+## 2018_09_24
+* study about maven
+* update UI
+* combine component of conference with existing part that do order
+____
 
