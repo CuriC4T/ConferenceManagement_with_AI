@@ -99,4 +99,7 @@ ____
 * update UI
 * combine component of conference with existing part that do order
 ____
+## 2018_09_25
+* study about google cloud speech
+____
 
