@@ -102,4 +102,10 @@ ____
 ## 2018_09_25
 * study about google cloud speech
 ____
+## 2018_09_28
+* study about google cloud speech
+____
+## 2018_09_29
+* adding google speech api
+____
 
