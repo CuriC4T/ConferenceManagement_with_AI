@@ -67,15 +67,15 @@ ____
 * make sever for conference(yet chatting part)
 ____
 ## 2018_09_17
-* completly add chatting code for client
-* completly add chatting code for sever
+* Perfectly added chatting code for client
+* Perfectly added chatting code for sever
 ____
 ## 2018_09_18
 * adding whiteboard code for client
-* completly add whiteboard code for sever
+* Perfectly added whiteboard code for sever
 ____
 ## 2018_09_19
-* completly add whiteboard code for client
+* Perfectly added whiteboard code for client
 * adding webcam code for client
 * have ISSUE that when transport webcam data with ObjectInput/OutputStream, occur error, out of buffer
 ____
@@ -86,11 +86,11 @@ Please check the link below for more information.
 
 ____
 ## 2018_09_22
-* completly add webcam code for client
+* completly added webcam code for client
 * adding webcam code for server
 ____
 ## 2018_09_23
-* completly add webcam code for server
+* Perfectly added webcam code for server
 * combine component of conference with existing part that do order
 * update UI
 ____
@@ -108,4 +108,13 @@ ____
 ## 2018_09_29
 * adding google speech api
 ____
+## 2018_09_30
+* Perfectly added google speech api
+____
+
+## <em>The functions I've implemented are:</em>
+### All of the features below work by voice
+* Show time and date
+* Runs an external program added by an individual
+* Provides webcam, whiteboard, and text chat via Server NOT Local
 
