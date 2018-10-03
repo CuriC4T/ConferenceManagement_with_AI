@@ -117,4 +117,8 @@ ____
 * Show time and date
 * Runs an external program added by an individual
 * Provides webcam, whiteboard, and text chat via Server NOT Local
+____
+## 2018_10_03
+* study deeplearning
+____
 
