@@ -121,4 +121,7 @@ ____
 ## 2018_10_03
 * study deeplearning
 ____
+## 2018_10_06
+* updata UI
+____
 
