@@ -123,5 +123,10 @@ ____
 ____
 ## 2018_10_06
 * updata UI
+* stabilize
+____
+## 2018_10_07
+* updata UI
+* stabilize
 ____
 
