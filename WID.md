@@ -131,14 +131,19 @@ ____
 ____
 ## 2018_10_09
 * updata UI
-* stabilize
+* Combine text chat with WhiteBoard
+
 ____
 ## 2018_10_10
 * updata UI
-* stabilize
+* Combine text chat with WhiteBoard
 ____
 ## 2018_10_11
-* updata UI
-* stabilize
+* Webcam has Issue that More than one, than error occurs
+* Voice has Issue that doesn't work
+* add Search function
+____
+## 2018_10_14
+* add TTS function
 ____
 
