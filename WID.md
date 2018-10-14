@@ -139,6 +139,7 @@ ____
 * Combine text chat with WhiteBoard
 ____
 ## 2018_10_11
+* solve issue of STT that Check the end of Speech
 * Webcam has Issue that More than one, than error occurs
 * Voice has Issue that doesn't work
 * add Search function
