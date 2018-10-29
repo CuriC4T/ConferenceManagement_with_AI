@@ -147,4 +147,7 @@ ____
 ## 2018_10_14
 * add TTS function
 ____
+## 2018_10_29
+* study deeplearning
+____
 
