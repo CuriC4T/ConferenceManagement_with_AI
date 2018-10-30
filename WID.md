@@ -150,4 +150,7 @@ ____
 ## 2018_10_29
 * study deeplearning
 ____
+## 2018_10_30
+* Buy deeplearning book
+____
 
