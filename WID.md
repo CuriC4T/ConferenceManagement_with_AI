@@ -153,4 +153,10 @@ ____
 ## 2018_10_30
 * Buy deeplearning book
 ____
+## 2018_11
+* study deepLearning and went conference of DeepLearning
+____
+## 2018_11_18
+* Solve Webcam Issue by using UDP
+____
 
