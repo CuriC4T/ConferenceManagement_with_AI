@@ -1,0 +1,5 @@
+C:\apache-maven-3.5.4\bin
+
+java 8support for m2e for ecl
+maven integration for
+https://github.com/goxr3plus/Java-Google-Text-To-Speech
