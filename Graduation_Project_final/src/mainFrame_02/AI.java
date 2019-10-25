@@ -11,9 +11,6 @@ import java.util.Calendar;
 import javax.swing.JLabel;
 
 import chattingwbclient.ChattingClient;
-import database.ConnectDB;
-import databaseClient.Client;
-import webCamServer01.WebcamServerSide;
 
 public class AI {
 	private JLabel label;
@@ -75,7 +72,6 @@ public class AI {
 			dateOrder();
 			mainframe.getAILabel().setIcon(mainframe.AI_Thinking);
 		} else if (order.contains("검색")) {
-			
 			searchOrder(order);
 		} else if (order.contains("종료")) {
 			if (flag) {
@@ -91,6 +87,8 @@ public class AI {
 			try {
 				String temp[]=order.split("에게");
 				mainframe.getWriter().println(mainframe.getCipher().encrypt("[ALRAM]"+temp[0]));
+				AISpeek = "호출하겠습니다.";
+				label.setText(AISpeek);
 			} catch (NoSuchAlgorithmException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -110,12 +108,15 @@ public class AI {
 			}
 			planOrder();
 			mainframe.getAILabel().setIcon(mainframe.AI_Thinking);
+			label.setText(AISpeek);
 		} else if (classification.checkClassification(order)) {
 			String addedOrder = classification.getClassification(order);
 			classificationOrder(addedOrder);
 			System.out.println(addedOrder);
 			mainframe.getAILabel().setIcon(mainframe.AI_Thinking);
+			
 		} else {
+			
 			//System.out.println(classification.checkClassification(order));
 			boolean isThrereOrder = dataManagement.canDoOrder(order);
 			if (!isThrereOrder) {
@@ -125,9 +126,12 @@ public class AI {
 				if (!flag) {
 					flag = true;
 					temp=order;
-					System.out.println(temp);
+					System.out.println(temp+" "+flag);
 				}
 
+			}else {
+				AISpeek = "알겠습니다";
+				label.setText(AISpeek);
 			}
 
 		}
@@ -212,6 +216,8 @@ public class AI {
 		try {
 			File htmlFile = new File(url);
 			Desktop.getDesktop().browse(htmlFile.toURI());
+			AISpeek = "관리페이지입니다";
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

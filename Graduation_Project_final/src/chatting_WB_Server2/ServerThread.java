@@ -23,7 +23,7 @@ public class ServerThread extends Thread {
 	private boolean ready = false;
 	private BufferedReader reader; // 입력 스트림
 	private PrintWriter writer; // 출력 스트림
-	private Manager Man;
+	private BManager Man;
 
 	/**
 	 * Generator function of class
@@ -31,7 +31,7 @@ public class ServerThread extends Thread {
 	 * @param socket socket
 	 * @param Man    Manager
 	 */
-	public ServerThread(Socket socket, Manager Man) { // 생성자
+	public ServerThread(Socket socket, BManager Man) { // 생성자
 
 		this.socket = socket;
 		this.Man = Man;
@@ -118,13 +118,13 @@ public class ServerThread extends Thread {
 				}
 
 				else if (msg.startsWith("[START]")) {
-					ready = true;
-					if (Man.isReady(roomNumber)) {
-						Man.sendToRoom(roomNumber, "[WEBCAMON]");
-					}
+//					ready = true;
+//					if (Man.isReady(roomNumber)) {
+//						Man.sendToRoom(roomNumber, "[WEBCAMON]");
+//					}
 
 				} else if (msg.startsWith("[WEBCAM]")) {
-					ready = true;
+//					ready = true;
 					
 					Man.sendToOthersForIP(this);
 

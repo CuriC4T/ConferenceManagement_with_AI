@@ -15,10 +15,8 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.net.InetAddress;
 import java.net.Socket;
 import java.security.GeneralSecurityException;
 import java.security.NoSuchAlgorithmException;
@@ -36,8 +34,8 @@ import javax.swing.JTextField;
 import cryption.CipherFunc;
 import mainFrame_02.Main;
 import mainFrame_02.MainFrame;
-import webcamClient.WebCamClient;
-import webcamServer.WebCamServer;
+import webcamClient.WebcamClient;
+import webcamServer.WebcamServer;
 
 /**
  * Client page setting class
@@ -111,9 +109,9 @@ public class ChattingClient extends Frame implements Runnable, ActionListener {
 		new Thread(this).start();
 		nameBox.setText(userName);
 		nameBox.setEditable(false);
-		setResizable(false); // size 변경 불가
+		setResizable(true); // size 변경 불가
 		setLocationRelativeTo(null);
-		setSize(785, 625);
+		setSize(800, 625);
 		setLayout(null); // 레이아웃을 사용하지 않는다.
 		setBackground(new Color(50, 50, 50));
 
@@ -434,7 +432,7 @@ public class ChattingClient extends Frame implements Runnable, ActionListener {
 		erase.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new WebCamServer();
+				
 				// TODO Auto-generated method stub
 				MyCanvas can2 = (MyCanvas) can;
 				can2.setCr(can.getBackground());
@@ -551,16 +549,17 @@ public class ChattingClient extends Frame implements Runnable, ActionListener {
 				// writer.println("[START]");
 				infoView.setText("상대의 결정을 기다립니다.");
 				startButton.setEnabled(false);
-				new Frame("asd").setVisible(true);
-				// WebCamServer aa =new WebCamServer();
+				WebcamServer webcamserver =new WebcamServer();
+				Thread tread = new Thread(webcamserver);
+				tread.start();
 			} catch (Exception e) {
 			}
 		} else if (ae.getSource() == WebcamButton) {
 			try {
-				// writer.println("[START]");
+				// writer.println("[WEBCAM]");
 				infoView.setText("상대의 결정을 기다립니다.");
 				WebcamButton.setEnabled(false);
-				WebCamClient webcamclient = new WebCamClient("172.30.1.50", 6782);
+				WebcamClient webcamclient =new WebcamClient();
 			} catch (Exception e) {
 			}
 		}
@@ -678,7 +677,7 @@ public class ChattingClient extends Frame implements Runnable, ActionListener {
 					//System.out.println(msg);
 					writer.println(cipher.encrypt("[WEBCAM]"));
 				} else if (msg.startsWith("[WEBCAM]")) {
-					//System.out.println(msg);
+					System.out.println(msg);
 					String subMsg = msg.substring(8);
 				//	//System.out.println(subMsg);
 					String[] IpPort = subMsg.split("#");

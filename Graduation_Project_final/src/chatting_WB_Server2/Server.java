@@ -8,7 +8,7 @@ import java.net.Socket;
  */
 public class Server {
 	private ServerSocket server;
-	private Manager bMan = new Manager();
+	private BManager bMan = new BManager();
 
 	/**
 	 * Gneerator of class 

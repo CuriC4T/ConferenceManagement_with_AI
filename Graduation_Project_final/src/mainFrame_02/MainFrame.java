@@ -72,9 +72,11 @@ public class MainFrame extends JFrame {
 	BufferedReader reader;
 	PrintWriter writer;
 	CipherFunc cipher;
+	
 	public MainFrame(String ID) {
 		this.ID=ID;
 		frame = this;
+		
 		try {
 			cipher = new CipherFunc();
 		} catch (UnsupportedEncodingException e) {
@@ -133,7 +135,7 @@ public class MainFrame extends JFrame {
 		JPanel temp = new JPanel();
 		tts= new TTS();
 		ai = new AI(this, whatAIsay,tts);
-		//stt = new STT(whatIsay, ai);
+		stt = new STT(whatIsay, ai);
 		
 		STTStartButton.setPreferredSize(new Dimension(40,40));
 		STTStartButton.setBorderPainted(false);
@@ -200,7 +202,7 @@ public class MainFrame extends JFrame {
 		add(AIPanel, BorderLayout.NORTH);
 		add(temp, BorderLayout.CENTER);
 		add(orderPart, BorderLayout.SOUTH);
-		//stt.startSTT();
+		stt.startSTT();
 	}
 
 	public void settingEvent() {
@@ -347,7 +349,7 @@ public class MainFrame extends JFrame {
 			InetAddress inetAddress = InetAddress.getLocalHost();
 			
 			System.out.println(inetAddress);
-			socket = new Socket("172.30.1.13", 7777);
+			socket = new Socket(inetAddress, 7777);
 			reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			writer = new PrintWriter(socket.getOutputStream(), true);
 			writer.println(cipher.encrypt("[NAME]"+ID));

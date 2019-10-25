@@ -8,8 +8,8 @@ import java.util.Vector;
  * class for  send  message
  *
  */
-class Manager extends Vector { // 메시지를 전달하는 클래스
-	Manager() {
+class BManager extends Vector { // 메시지를 전달하는 클래스
+	BManager() {
 	}
 
 	/**

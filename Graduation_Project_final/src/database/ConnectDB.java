@@ -20,7 +20,7 @@ import cryption.CipherFunc;
 public class ConnectDB {
 
 	static final String JDBC_DRIVER = "org.mariadb.jdbc.Driver";
-	static final String DB_URL = "jdbc:mariadb://localhost:4000/classification";
+	static final String DB_URL = "jdbc:mariadb://localhost:3306/classification";
 	static final String USER = "root";
 	static final String PASS = "1234";
 	Connection conn;
@@ -73,7 +73,7 @@ public class ConnectDB {
 	}
 
 	public void insertDTO(String name, String price) {
-		String sql = "insert into classification_db(classification,orderClass) values(?,?);";
+		String sql = "insert into classification_db(id,classification,orderClass) values(NULL,?,?);";
 		PreparedStatement pstmt = null;
 		try {
 			DTO DBObject = new DTO(cipher.encrypt(name), cipher.encrypt(price));

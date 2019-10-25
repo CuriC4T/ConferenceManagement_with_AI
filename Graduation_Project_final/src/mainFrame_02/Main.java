@@ -6,11 +6,8 @@ import java.io.UnsupportedEncodingException;
 import javax.swing.SwingUtilities;
 
 import chattingwbclient.ChattingClient;
-import voiceClient.GUI;
-import voiceClient.RunVoice;
-import webCamServer01.WebcamServerSide;
-import webcamClient.WebCamClient;
-import webcamServer.WebCamServer;
+import webcamServer.WebcamServer;
+
 
 public class Main {
 //232323
@@ -22,7 +19,12 @@ public class Main {
 		
 		// SwingUtilities.invokeLater(new WebcamServerSide());
 		// new RunVoice();
-		//new WebcamServerSide();
+//		try {
+//			new WebcamServer();
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 
 		
 		
